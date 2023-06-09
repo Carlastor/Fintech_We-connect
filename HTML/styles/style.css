@@ -74,6 +74,11 @@ body {
     display: flex;
     gap: 30px;
     align-items: center;
+    text-decoration: none;
+}
+
+.cabecalho__menu__entrada:hover {
+    color: var(--cor-hover);
 }
 
 .cabecalho__menu__entrada__entre {
@@ -385,6 +390,19 @@ body {
     gap: 50%;
  }
 
+ .corpo__lateral__cadastro__form__ed {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 0% 5% 7%;
+    gap: 10px;
+ }
+
+ .corpo__lateral__cadastro__form__regras {
+    font-family: var(--font-06);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor-03);
+ }
 
  .corpo__lateral__cadastro__form__continuar {
     background-color: var(--cor-02);
@@ -396,6 +414,16 @@ body {
     font-weight: 700;
     font-size: 1rem;
     color: var(--cor-04);
+ }
+
+ .corpo__lateral__cadastro__form__continuar__botao {
+    width: 100%;
+    height: 100%;
+ }
+
+ .corpo__lateral__cadastro__form__continuar:hover {
+    color: var(--cor-hover);
+    text-decoration: none;
  }
 
  .corpo__lateral__cadastro__form__reset {
@@ -410,6 +438,9 @@ body {
     color: var(--cor-04);
  }
 
+ .corpo__lateral__cadastro__form__reset:hover {
+    color: var(--cor-hover);
+ }
 
 
 footer {
