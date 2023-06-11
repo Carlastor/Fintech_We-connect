@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Jost:wght@400;500;700&family=Open+Sans:wght@400;700&family=Plus+Jakarta+Sans:wght@600;700&family=Poppins:wght@400;600&family=Raleway:wght@500;600;700;800&family=Urbanist:wght@400;900&display=swap');
 
+
 :root {
     --cor-01: #f5f5f5;
     --cor-02: #7ED956;
@@ -15,6 +16,8 @@
     --cor-12: #39884F;
     --cor-13: #EAEEED;
     --cor-24: #0D163A;
+    --cor-25: #4B0082;
+    --cor-26: #FF0000;
     --cor-hover: #008000;
 
     --font-01: 'Baloo 2', cursive;
@@ -31,9 +34,20 @@
     padding: 0;
 }
 
+.link {
+    display: flex;
+    text-decoration: none;
+    color: var(--cor-25);
+    gap: 10px;
+}
+
 body {
     background-color: var(--cor-01);
     box-sizing: border-box;
+}
+
+.corpo {
+    margin: 10px;
 }
 
 .cabecalho {
@@ -121,6 +135,13 @@ body {
     padding: 0.5%;
 }
 
+.cabecalho__dashboard__saudacao {
+    font-family: var(--font-01);
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--cor-07);
+}
+
 .cabecalho__dashboard__opcoes {
     display: flex;
     gap: 5%;
@@ -128,13 +149,17 @@ body {
 
 .cabecalho__dashboard__divisoria {
     font-family: var(--font-01);
-    font-size: 2.02rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    color: var(--cor-03);
-    background-color: var(--cor-01);
-    border-radius: 8px;
-    width: 11.25rem;
+    background-color: var(--cor-04);
+    border-radius: 20px;
+    width: 8.25rem;
     height: fit-content;
+}
+
+.cabecalho__icones {
+    text-decoration: none;
+    color: var(--cor-25);
 }
 
 .menu__dashboard {
@@ -142,6 +167,7 @@ body {
     width: fit-content;
     height: 100%;
     gap: 30%;
+    padding: 2% 0% 13% 0%;
  }
 
 .menu__dashboard__divisoria {
@@ -152,8 +178,8 @@ body {
     background-color: var(--cor-04);
     border-radius: 8px;
     width: 15rem;
-    height: min-content;
-    display: flex;
+    /* height: min-content;
+    display: flex; */
     align-content: center;
 }
 
@@ -191,6 +217,11 @@ body {
     left: 33%;
     transform: translate(-50%, -50%);
     padding: 200px;
+}
+
+.corpo__apresentacao__imagem {
+    width: 50%;
+    box-sizing: border-box;
 }
 
 .corpo__apresentacao__titulo {
@@ -519,56 +550,169 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
  }
 
  .dashboard__painel__titulo {
     font-family: var(--font-07);
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
     color: var(--cor-24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
  }
 
  .dashboard__painel__quadros {
     font-family: var(--font-07);
     font-weight: 800;
     display: flex;
-    height: 70%;
+    flex-direction: column;
     gap: 1%;
+    margin: 0.4%;
+ }
+
+ .dashboard__painel__contas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+ }
+
+ .dashboard__painel__contas__ind {
+    background-color: var(--cor-01);
+    width: 100%;
+    border: 1px solid var(--cor-13);
+    border-radius: 30px;
+    color: var(--cor-24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.5%;
+    height: fit-content;
+    padding: 1%;
+    box-sizing: border-box;
+ }
+ 
+ .dashboard__painel__quadros__superior {
+    display: flex;
+    width: 100%;
+    height: 60%;
+ }
+
+ .dashboard__painel__quadros__inferior {
+    display: flex;
+    gap: 1%;
+    height: 50%;
  }
 
  .dashboard__painel__quadros__ind_1 {
     background-color: var(--cor-02);
-    width: 33%;
+    width:100%;
     border: 1px solid var(--cor-13);
-    border-radius: 8%;
+    border-radius: 30px;
     color: var(--cor-04);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 5%;
+    gap: 30%;
  }
 
  .dashboard__painel__quadros__ind_2 {
     background-color: var(--cor-04);
     width: 33%;
     border: 1px solid var(--cor-13);
-    border-radius: 8%;
+    border-radius: 30px;
     color: var(--cor-24);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    gap: 5.5%;
  }
 
  .dashboard__painel__quadros__ind__titulo {
     display: flex;
     align-items: center;
+    gap: 10px;
+    margin: 1%;
+    width: 50%;
+    justify-content: center;
  }
 
  .dashboard__painel__quadros__ind__texto {
-    display: flex;
+    font-size: 1.9rem;
  }
+
+ .dashboard__painel__quadros__ind__subtexto {
+    padding: 0.5%;
+ }
+
+ .dashboard__painel__quadros__titulo {
+    font-size: 1.9rem;
+ }
+
+ .dashboard__painel__quadros__subtitulo {
+    padding: 0.5%;
+ }
+
+ .dashboard__painel__quadros__detalhes {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 1px;
+    text-decoration: none;
+ }
+
+  table {
+    border-collapse: collapse;
+    font-family: var(--font-01);
+    font-size: 1.4rem;
+    color: var(--cor-24);
+    border: 1px solid var(--cor-08);
+    padding: 8px;
+ }
+
+  td {
+    padding: 0.5%;
+    font-family: var(--font-01);
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid var(--cor-08);
+ }
+ 
+ .dashboard__painel__indice__lcto__debito {
+    color: var(--cor-26);
+ }
+
+ .dashboard__painel__indice__lcto__credito {
+    color: var(--cor-10);
+ }
+
+ .dashboard__painel__indice__lancamentos__origem {
+    justify-items: center;
+ }
+
+ .link__Saldo {
+    color: var(--cor-04);
+    display: flex;
+    text-decoration: none;
+ }
+
+ .link__detalhes__debito {
+    color: var(--cor-26);
+    text-decoration: none;
+ }
+
+ .link__detalhes__credito {
+    color: var(--cor-10);
+    text-decoration: none;
+ }
+
+
+
 
 
 footer {
@@ -681,6 +825,8 @@ footer {
     padding: 0.2rem;   
 }
 
-.pagina {
-    height: 100vh;
+.rodape__interno {
+    background-color: var(--cor-03);
+    font-family: var(--font-02);
+    font-size: 0.9rem;
 }
