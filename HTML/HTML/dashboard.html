@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We-conomic - Dashboard</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+    <header  class="cabecalho__dashboard">
+        <section class="cabecalho__dashboard__logo">
+            <a class= "cabecalho__menu__opcoes__logo" href="./dashboard.html">
+                <img src="./assets/Logo WeConomic 3.png" alt="Logo We-conomic"></a>
+        </section>
+        <section>
+            <h3 class="cabecalho__dashboard__saudacao">Olá, Bruna!</h3>
+        </section>
+        <section class="cabecalho__dashboard__opcoes">
+            <div class="cabecalho__dashboard__divisoria">
+                <img src="./assets/Icone_ajuda.png" alt="Ícone de um ponto de exclamação">
+                <a class= "cabecalho__icones" href="./manutencao.html">Ajuda</a>
+            </div>
+            <div class="cabecalho__dashboard__divisoria">
+                <img src="./assets/Icone_saida.png" alt="Ícone com uma seta indicando a saída">
+                <a class= "cabecalho__icones" href="./index.html">Sair</a>
+            </div>
+        </section>
+
+    </header>
+    <main class="dashboard">
+        <section class="menu__dashboard">
+            <div>
+                <div class="menu__dashboard__criacao__recebimento">
+                    <a class="menu__dashboard__criacao__texto" href="./recebimento.html">Novo recebimento</a>
+                </div>
+
+                <div class="menu__dashboard__criacao__despesa">
+                    <a class="menu__dashboard__criacao__texto" href="./despesa.html">Nova despesa</a>
+                </div>
+
+                <div class="menu__dashboard__criacao__compra">
+                    <a class="menu__dashboard__criacao__texto" href="./compra.html">Nova compra</a>
+                </div>
+
+                <img src="./assets/Linha_dashboard.png" alt="Linha divisória">
+
+            </div>
+
+            <div>
+                <div class="menu__dashboard__divisoria">
+                    <img src="./assets/Icone_dashboard.png" alt="Ícone de dashboard">
+                    <a class="menu__dashboard__divisoria__texto" href="./dashboard.html">Página Inicial</a>
+                </div>
+
+                <div class="menu__dashboard__divisoria">
+                    
+                    <span class="material-symbols-outlined">account_balance</span>
+                    <a class="menu__dashboard__divisoria__texto" href="./contas.html">Contas</a>
+                </div>
+
+                <div class="menu__dashboard__divisoria">
+                    <span class="material-symbols-outlined">credit_card</span>
+                    <a class="menu__dashboard__divisoria__texto" href="./cartoes_credito.html">Cartões de crédito</a>
+                </div>
+
+                <div class="menu__dashboard__divisoria">
+                    <span class="material-symbols-outlined">currency_exchange</span>
+                    <a class="menu__dashboard__divisoria__texto" href="./lancamentos.html">Lançamentos</a>
+                </div>
+
+                <div class="menu__dashboard__divisoria">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    <a class="menu__dashboard__divisoria__texto" href="./compras.html">Compras</a>
+                </div>
+
+                <img src="./assets/Linha_dashboard.png" alt="Linha divisória">
+            </div>
+
+            <div>
+                <div class="menu__dashboard__divisoria">
+                    <img src="./assets/Icone_silhueta.png" alt="Ícone de uma silhueta">
+                    <a class="menu__dashboard__divisoria__texto" href="./perfil.html">Perfil</a>
+                </div>
+
+                <div class="menu__dashboard__divisoria">
+                    <img src="./assets/Icone_config.png" alt="Ícone de uma ferramenta">
+                    <a class="menu__dashboard__divisoria__texto" href="./manutencao.html">Configurações</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard__painel">
+            <div class="dashboard__painel__quadros">
+                <div class="dashboard__painel__quadros__superior">
+                    <div class="dashboard__painel__quadros__ind_1">
+                        <div class="dashboard__painel__quadros__ind__titulo">
+                            <img src="./assets/Icone_carteira.png" alt="Ícone de carteira">
+                            <p class="dashboard__painel__quadros__titulo">Saldo Total</p>
+                        </div>
+                        <img src="./assets/Linha_dashboard_1.png">
+                        <h2 class="dashboard__painel__quadros__ind__texto">R$56.789,12</h2>
+                        <div class="dashboard__painel__quadros__detalhes">
+                        <a class="link__Saldo" href="./contas.html">Ver detalhes <img src="./assets/Seta_direita.png" alt="Seta apontando para a direita"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard__painel__quadros__inferior">
+                    <div class="dashboard__painel__quadros__ind_2">
+                        <div class="dashboard__painel__quadros__ind__titulo">
+                            <img src="./assets/Icone_recebimentos.png" alt="Ícone de um triângulo com quinas arredondadas apontando para baixo">
+                            <p class="dashboard__painel__quadros__subtitulo">Recebimentos</p>
+                        </div>
+                        <img src="./assets/Linha_dashboard_1.png">
+                        <h2 class="dashboard__painel__quadros__ind__subtexto">R$7.890,00</h2>
+                        <div class="dashboard__painel__quadros__detalhes">
+                        <a class="link" href="./lancamentos.html">Ver detalhes <img src="./assets/Seta_direita.png" alt="Seta apontando para a direita"></a>
+                        </div>
+                    </div>
+
+                    <div class="dashboard__painel__quadros__ind_2">
+                        <div class="dashboard__painel__quadros__ind__titulo">
+                            <img src="./assets/Icone_despesas.png" alt="Ícone de um triângulo com quinas arredondadas apontando para cima">
+                            <p class="dashboard__painel__quadros__subtitulo">Despesas</p>
+                        </div>
+                        <img src="./assets/Linha_dashboard_1.png" alt="Linha divisória">
+                        <h2 class="dashboard__painel__quadros__ind__subtexto">R$2.345,67</h2>
+                        <div class="dashboard__painel__quadros__detalhes">
+                        <a class="link" href="./lancamentos.html">Ver detalhes <img src="./assets/Seta_direita.png" alt="Seta apontando para a direita"></a>
+                        </div>
+                    </div>
+
+                    <div class="dashboard__painel__quadros__ind_2">
+                        <div class="dashboard__painel__quadros__ind__titulo">
+                            <img src="./assets/Icone_despesas.png" alt="Ícone de um triângulo com quinas arredondadas apontando para baixo">
+                            <p class="dashboard__painel__quadros__subtitulo">Cartão de crédito</p>
+                        </div>
+                        <img src="./assets/Linha_dashboard_1.png">
+                        <h2 class="dashboard__painel__quadros__ind__subtexto">R$3.456,78</h2>
+                        <div class="dashboard__painel__quadros__detalhes">
+                        <a class="link" href="./cartoes_credito.html">Ver detalhes <img src="./assets/Seta_direita.png" alt="Seta apontando para a direita"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="rodape__interno">We-conomic - Seu sucesso financeiro é o nosso objetivo!</footer>
+</body>
+</html>
