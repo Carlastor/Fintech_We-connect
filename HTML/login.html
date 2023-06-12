@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>We-conomic - Login</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <section class="cabecalho__menu__opcoes">
+                    <a class= "cabecalho__menu__opcoes__logo" href="./index.html">
+                        <img src="./assets/Logo WeConomic 3.png" alt="Logo We-conomic"></a>
+                </section>
+                <section class="cabecalho__menu__entrada">
+                    <a class="cabecalho__menu__entrada__entre" href="./login.html">Entre</a>
+                    <a class="cabecalho__menu__entrada__cadastre" href="./cadastro.html">Cadastre-se</a>
+                </section>
+            </nav>
+        </header>
+        <main class="corpo__cadastro">
+            <section class="corpo__lateral">
+                <div class="corpo__lateral__intro">
+                    <h1 class="corpo__lateral__intro__titulo">Olá, boas vindas novamente!</h1>
+                    <p class="corpo__lateral__intro__texto">Para se manter conectado conosco, basta fazer seu login novamente.</p>
+                </div>
+            </section>
+
+            <section class="corpo__lateral__dados">
+                <h2 class="corpo__lateral__dados__titulo">Entrar</h2>
+
+                <div class="corpo__lateral__cadastro">
+                    <form class= "corpo__lateral__cadastro__form" id="cadastro" method="GET">
+
+                        <label for="e-mail">E-mail</label><br>
+                        <input class= "corpo__lateral__cadastro__form__input" type="email" id="e-mail" placeholder="Digite seu e-mail aqui" required><br><br>
+    
+                        <label for="senha">Digite sua senha</label><br>
+                        <input class= "corpo__lateral__cadastro__form__input" 
+                            type="password" 
+                            id="senha" 
+                            placeholder="xxxxxx" 
+                            required/><br><br><br><br><br>
+                        </input>
+                        
+    
+                        <div class="corpo__lateral__cadastro__form__botoes">
+                            <input class="corpo__lateral__cadastro__form__reset" type="reset" value="Limpar dados">
+
+                            <button type="submit" class="corpo__lateral__cadastro__form__continuar" formaction="./dashboard.html">Vamos começar!</button>
+                        </div>
+                    </form>
+                        
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
